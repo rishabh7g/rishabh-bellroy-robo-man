@@ -1,9 +1,14 @@
 .controls {
-  margin-top: 20px;
+  background-color: rgb(247, 247, 247);
+  padding: 3rem;
 }
 
-.controls button {
-  margin: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
+.controls__heading {
+  font-size: 2rem;
+}
+
+.controls__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
