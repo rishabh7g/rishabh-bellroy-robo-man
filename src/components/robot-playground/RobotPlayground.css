@@ -1,0 +1,32 @@
+.grid {
+  display: inline-block;
+  margin: 2rem;
+  border: 1px solid #ccc;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid #ccc;
+}
+
+.cell__robot {
+  border-color: rgb(225, 90, 29);
+}
+
+.cell__robot--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cell__robot--invisible {
+  opacity: 0;
+  visibility: hidden;
+}
