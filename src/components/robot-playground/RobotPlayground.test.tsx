@@ -1,3 +1,4 @@
+import React from 'react';
 import { render } from '@testing-library/react';
 import { RobotPlayground } from 'src/components/robot-playground/RobotPlayground';
 import { Direction } from 'src/types/types';

@@ -1,3 +1,4 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { Robot } from 'src/components/robot/Robot';
 import { Direction } from 'src/types/types'; // Adjust the path as necessary

@@ -1,3 +1,4 @@
+import React from 'react';
 import { RobotControls } from 'src/components/robot-controls/RobotControls';
 import { RobotPlayground } from 'src/components/robot-playground/RobotPlayground';
 import { useRobotSimulatorManagement } from 'src/components/robot-simiulator/RobotSimulator.management';

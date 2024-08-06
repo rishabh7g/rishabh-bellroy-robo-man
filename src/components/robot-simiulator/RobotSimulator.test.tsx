@@ -1,3 +1,4 @@
+import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { RobotSimulator } from 'src/components/robot-simiulator/RobotSimulator';
 import { Direction } from 'src/types/types';

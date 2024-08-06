@@ -1,3 +1,4 @@
+import React from 'react';
 import ArrowUrl from 'src/assets/arrow.png';
 import LogoUrl from 'src/assets/logo.png';
 import 'src/components/robot/Robot.css';

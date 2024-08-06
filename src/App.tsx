@@ -1,3 +1,4 @@
+import React from 'react';
 import { RobotSimulator } from 'src/components/robot-simiulator/RobotSimulator';
 import 'src/App.css';
 

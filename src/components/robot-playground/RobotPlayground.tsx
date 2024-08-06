@@ -1,3 +1,4 @@
+import React from 'react';
 import { Robot } from 'src/components/robot/Robot';
 import { TOTAL_GRID_SIZE } from 'src/constants/direction.constant';
 import { Direction } from 'src/types/types';
