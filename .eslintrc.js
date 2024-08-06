@@ -11,14 +11,7 @@ module.exports = {
        version: 'detect',
      },
    },
-   extends: [
-     'plugin:react/recommended',
-     'plugin:react-hooks/recommended',
-     'plugin:import/errors',
-     'plugin:import/warnings',
-     'plugin:jsx-a11y/recommended',
-     'plugin:eslint-comments/recommended',
-   ],
+   extends: ['plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:import/errors', 'plugin:import/warnings', 'plugin:jsx-a11y/recommended', 'plugin:eslint-comments/recommended', 'plugin:storybook/recommended'],
    parserOptions: {
      ecmaVersion: 2020,
      sourceType: 'module',
