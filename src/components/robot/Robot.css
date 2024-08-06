@@ -1,0 +1,54 @@
+/* define variables */
+:root {
+  --width: 4rem;
+  --height: 4rem;
+}
+
+.robot {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--width);
+  height: var(--height);
+}
+
+.robot__logo {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+}
+
+.robot__arrow {
+  position: absolute;
+  transition:
+    transform 0.3s ease-in-out 0.2s,
+    left 0.3s ease-in-out,
+    top 0.3s ease-in-out,
+    right 0.3s ease-in-out,
+    bottom 0.3s ease-in-out;
+}
+
+.robot__arrow--north {
+  top: var(--width);
+  left: calc(var(--width) / 2);
+  transform: translateX(-50%) rotateZ(270deg);
+}
+
+.robot__arrow--west {
+  top: calc(var(--width) / 2);
+  left: 0;
+  transform: translateX(-100%) translateY(-20%) rotateZ(360deg);
+}
+
+.robot__arrow--south {
+  top: 0;
+  left: calc(var(--width) / 2);
+  transform: translateX(-50%) translateY(-100%) rotateZ(90deg);
+}
+
+.robot__arrow--east {
+  top: calc(var(--width) / 2);
+  left: var(--width);
+  transform: translateY(-50%) rotateZ(180deg);
+}
