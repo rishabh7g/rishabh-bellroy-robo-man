@@ -1,0 +1,9 @@
+.controls {
+  margin-top: 20px;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
