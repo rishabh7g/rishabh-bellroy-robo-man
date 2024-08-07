@@ -30,26 +30,80 @@
     bottom 0.3s ease-in-out;
 }
 
-.robot__arrow--north {
-  top: var(--width);
-  left: calc(var(--width) / 2);
-  transform: translateX(-50%) rotateZ(270deg);
+.robot__arrow--south {
+  transform: rotateZ(90deg);
 }
 
 .robot__arrow--west {
-  top: calc(var(--width) / 2);
-  left: 0;
-  transform: translateX(-100%) translateY(-20%) rotateZ(360deg);
+  transform: rotateZ(0deg);
 }
 
-.robot__arrow--south {
-  top: 0;
-  left: calc(var(--width) / 2);
-  transform: translateX(-50%) translateY(-100%) rotateZ(90deg);
+.robot__arrow--north {
+  transform: rotateZ(270deg);
 }
 
 .robot__arrow--east {
-  top: calc(var(--width) / 2);
-  left: var(--width);
-  transform: translateY(-50%) rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+
+/* Keyframes for smooth transitions */
+@keyframes north-to-east {
+  from {
+    transform: rotateZ(270deg);
+  }
+  to {
+    transform: rotateZ(180deg);
+  }
+}
+
+@keyframes east-to-south {
+  from {
+    transform: rotateZ(180deg);
+  }
+  to {
+    transform: rotateZ(90deg);
+  }
+}
+
+@keyframes south-to-west {
+  from {
+    transform: rotateZ(90deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes west-to-north {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-90deg);
+  }
+}
+
+@keyframes north-to-west {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+.robot__arrow--animate-north-to-east {
+  animation: north-to-east 0.3s ease-in-out forwards;
+}
+
+.robot__arrow--animate-east-to-south {
+  animation: east-to-south 0.3s ease-in-out forwards;
+}
+
+.robot__arrow--animate-south-to-west {
+  animation: south-to-west 0.3s ease-in-out forwards;
+}
+
+.robot__arrow--animate-west-to-north {
+  animation: west-to-north 0.3s ease-in-out forwards;
 }
